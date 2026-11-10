@@ -588,7 +588,7 @@ Cada fatia termina em um **Definition of Done (DoD)** verificável. Não avança
 - [x] **0.1** `git init`. Remover o scaffold Vite (`vite.config.ts`, `index.html`, `src/main.tsx`, `App.*`, assets de exemplo, `tsconfig.app/node.json` se conflitarem). Criar o projeto Next.js (App Router, TS, Tailwind, ESLint, `src/`, alias `@/`) **no mesmo diretório**, e fixar versões de Node (`.nvmrc`) e do gerenciador de pacotes. *DoD:* `dev`, `build` e `lint` passam, e a compatibilidade com o TS está resolvida.
 - [x] **0.2** TS estrito (`strict`, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`). Prettier, `jsx-a11y`, regras de fronteira de import, `server-only`. `lib/env.ts` com zod e `.env.example`. *DoD:* um import cruzado proibido falha no lint.
 - [x] **0.3** Dependências: `@supabase/supabase-js`, `@supabase/ssr`, `@tanstack/react-query`, `zod`, `recharts`, `react-markdown`, Vitest, Playwright, `@axe-core/playwright`. Inicializar shadcn/ui. *DoD:* um componente shadcn renderiza.
-- [ ] **0.4** CI no GitHub Actions: `lint`, `tsc --noEmit`, `vitest`, `build`. *DoD:* PR de teste fica verde.
+- [x] **0.4** CI no GitHub Actions: `lint`, `tsc --noEmit`, `vitest`, `build`. *DoD:* PR de teste fica verde.
 
 **Fase 1: Dados e segurança (backend primeiro)**
 - [ ] **1.1** Supabase CLI: `supabase init` e `supabase start` (local, Docker). Criar o projeto remoto e vincular.
