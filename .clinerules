@@ -1,0 +1,20 @@
+# .clinerules - Leis Operacionais do Projeto
+
+## 1. Princípios de Engenharia e Tipagem
+- Todo código deve ser em TypeScript estrito; proibido o uso de `any`.
+- Não invente tipos em arquivos de componentes; consulte e utilize `docs/architecture.md`.
+- Separe estritamente Server State (cache/requisições remotas) de Client State (modais, abas, inputs locais).
+
+## 2. Princípios de Design & Interface
+- Evite layouts e paletas clichês de IA (proibido gradientes roxos sem contexto).
+- Priorize hierarquia tipográfica, contraste de leitura, espaçamentos consistentes e suporte a temas/tokens customizáveis.
+- Use Tailwind CSS de forma semântica e componentes acessíveis (Radix/shadcn).
+
+## 3. Protocolo de Depuração e Correção de Falhas
+- Proibido palpites cegos ou reescrita aleatória de arquivos.
+- Diante de erros, isole os limites do componente, valide entradas/saídas com logs direcionados e corrija apenas a causa raiz.
+- Rode a verificação de tipos (`tsc --noEmit`) e linter antes de considerar uma tarefa concluída.
+
+## 4. Gestão de Arquivos e Contexto
+- Pesquise componentes e utilitários existentes antes de recriar soluções equivalentes.
+- Respeite o isolamento das pastas (`components/`, `hooks/`, `services/`, `types/`).
